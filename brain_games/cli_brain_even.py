@@ -1,7 +1,6 @@
 from random import randint
 from prompt import string
-from brain_games.cli import welcome_user
-from brain_games.scripts.brain_games import main
+
 
 def main():
 	name='Ilyas'
