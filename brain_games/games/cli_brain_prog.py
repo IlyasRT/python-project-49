@@ -1,7 +1,7 @@
 from random import randint
 import prompt
 from brain_games.games.cli import welcome_user
-from brain_games.games.constants import number_of_repetitions
+from brain_games.games.constants import NUMBER_OF_REPETITIONS
 print('brain-prog')
 
 
@@ -9,7 +9,7 @@ def brain_prog():
     name = welcome_user()
     correction_of_user_answer = True
     count = 0
-    while count < number_of_repetitions:
+    while count < NUMBER_OF_REPETITIONS:
         length_of_progression = randint(5, 10)
         position_of_unknown_element = randint(0, length_of_progression-1)
         delta_of_progression = randint(1, 10)

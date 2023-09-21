@@ -1,1 +1,1 @@
-number_of_repetitions = 3
+NUMBER_OF_REPETITIONS = 3

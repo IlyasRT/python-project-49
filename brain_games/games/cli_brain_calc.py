@@ -1,8 +1,8 @@
 from random import randint
 import prompt
 from brain_games.games.cli import welcome_user
-from brain_games.games.constants import number_of_repetitions
-number_of_repetitions
+from brain_games.games.constants import NUMBER_OF_REPETITIONS
+
 print('brain_calc')
 
 
@@ -11,7 +11,7 @@ def brain_calc():
     count = 0
     correction_of_user_answer = True
 
-    while count < number_of_repetitions:
+    while count < NUMBER_OF_REPETITIONS:
         a = randint(1, 10)
         b = randint(1, 10)
         action = ['+', '-', '*']
