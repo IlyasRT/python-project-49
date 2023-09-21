@@ -1,11 +1,13 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Hexlet project Brain games"
 authors = ["ilyas-r <riggit5->"]
+repository = "https://github.com/IlyasRT/python-project-49"
 packages = [
   { include = "brain_games" },
 ]
+
 
 [tool.poetry.dependencies]
 python = "^3.10"
