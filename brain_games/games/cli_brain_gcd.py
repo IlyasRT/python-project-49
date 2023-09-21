@@ -1,6 +1,7 @@
 from random import randint
 import prompt
 from brain_games.games.cli import welcome_user
+from brain_games.games.constants import number_of_repetitions
 print('brain-gcd')
 
 
@@ -8,7 +9,7 @@ def brain_gcd():
     name = welcome_user()
     count = 0
     correction_of_user_answer = True
-    while count < 3:
+    while count < number_of_repetitions:
         a, b = randint(1, 20), randint(1, 20)
         list_of_number = [a, b]
         list_of_dividers = []

@@ -1,6 +1,7 @@
 from random import randint
 import prompt
 from brain_games.games.cli import welcome_user
+from brain_games.games.constants import number_of_repetitions
 print('brain_even')
 
 
@@ -9,7 +10,7 @@ def brain_even():
     print('Answer "yes" if the number is even, otherwise answer "no".')
     count = 0
     correction_of_user_answer = True
-    while count < 3:
+    while count < number_of_repetitions:
         random_number = randint(1, 10)
         print(f'Question: {random_number}')
         user_answer = prompt.string('Your answer: ').lower()
