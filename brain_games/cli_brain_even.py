@@ -24,7 +24,7 @@ def brain_even():
     while count < 3:
         random_number = randint(1, 10)
         print(f'Question: {random_number}')
-        user_answer = prompt.string('Your answer:').lower()
+        user_answer = prompt.string('Your answer: ').lower()
         if (random_number % 2 == 0 and user_answer == 'yes'.lower()) or (
                 random_number % 2 != 0 and user_answer == 'no'.lower()):
             count += 1

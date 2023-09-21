@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+
+from brain_games.cli_brain_prime import brain_prime
+
+def main():
+    brain_prime()
+    
+if __name__ == '__main__':
+    main()

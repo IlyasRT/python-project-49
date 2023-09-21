@@ -19,7 +19,7 @@ def brain_calc():
         
         print('What is the result of the expression?')
         print(f'Question: {a} {action[action_index]} {b}')
-        user_answer = int(prompt.string('Your answer:'))
+        user_answer = int(prompt.string('Your answer: '))
         if user_answer == action_table[action_index]:
             count += 1
             print(f'Correct!')

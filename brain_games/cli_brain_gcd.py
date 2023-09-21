@@ -18,7 +18,7 @@ def brain_gcd():
         print(f'Find the greatest common divisor of given numbers.')
         correction_of_user_answer = True
         print(f'Question: {a} {b}')
-        user_answer = prompt.string('Your answer:')
+        user_answer = prompt.string('Your answer: ')
         if int(user_answer) == max_divider:
             #print(f'вошли user_answer == max_divider')
             count += 1
