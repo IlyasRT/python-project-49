@@ -28,7 +28,7 @@ def brain_gcd():
         else:
             count = 3
             correction_of_user_answer = False
-            print(f'\'{user_answer}\' is wrong answer;(.Correct answer was \'{max_divider}\'.')
+            print(f'\'{user_answer}\' is wrong answer;(. Correct answer was \'{max_divider}\'.')
             print(f'Let\'s try again, {name}!')
     if correction_of_user_answer is True:
         print(f'Congratulations, {name}!')

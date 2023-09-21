@@ -21,6 +21,7 @@ def brain_prog():
         progression[position_of_unknown_element] = '..'
         print('What number is missing in the progression?')
         correction_of_user_answer = True
+        print('Question: ', end = '')
         print(*progression)
         user_answer = prompt.string('Your answer: ')
         if int(user_answer) == unknown_element:
@@ -29,7 +30,7 @@ def brain_prog():
         else:
             count = 3
             correction_of_user_answer = False
-            print(f'\'{user_answer}\' is wrong answer;(.Correct answer was \'{unknown_element}\'.')
+            print(f'\'{user_answer}\' is wrong answer;(. Correct answer was \'{unknown_element}\'.')
             print(f'Let\'s try again, {name}!')
     if correction_of_user_answer is True:
         print(f'Congratulations, {name}!')

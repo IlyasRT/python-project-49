@@ -29,7 +29,7 @@ def brain_calc():
         else:
             correction_of_user_answer = False
             count += 3
-            print(f'\'{user_answer}\' is wrong answer;(.Correct answer was \'{act[index]}\'.')
+            print(f'\'{user_answer}\' is wrong answer;(. Correct answer was \'{act[index]}\'.')
             print(f'Let\'s try again, {name}!')
     if correction_of_user_answer is True:
         print(f'Congratulations, {name}!')
