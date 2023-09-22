@@ -17,27 +17,22 @@ def brain_prime():
         for i in range(1, number + 1):
             if number % i == 0:
                 d.append(i)
-        
         an = prompt.string('Your answer: ').lower()
         if an == 'yes' and len(d) == 2:
             count += 1
             print('Correct!')
-
         elif an == 'no' and len(d) > 2:
             count += 1
             print('Correct!')
-            
         elif an == 'yes' and len(d) > 2:
             correction_of_user_answer = False
             count += 3
             print(f'\'{an}\' is wrong answer;(. Correct answer was \'no\'.')
             print(f'Let\'s try again, {name}!')
-            
         elif an == 'no' and len(d) == 2:
             correction_of_user_answer = False
             count += 3
             print(f'\'{an}\' is wrong answer;(. Correct answer was \'yes\'.')
-            print(f'Let\'s try again, {name}!')    
-        
+            print(f'Let\'s try again, {name}!')
     if correction_of_user_answer is True:
         print(f'Congratulations, {name}!')
