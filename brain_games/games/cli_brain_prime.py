@@ -16,7 +16,7 @@ def brain_prime():
         for i in range(1, number + 1):
             if number % i == 0:
                 d.append(i)
-        print('Answer \"yes\" if given number is prime. Otherwise answer \"no\".')
+        print('Answer \"yes\" if given number is prime.Otherwise answer \"no\".')
         an = prompt.string('Your answer: ').lower()
         if (an == 'yes' and len(d) == 2) or (an == 'no' and len(d) > 2):
             count += 1
