@@ -18,13 +18,25 @@ def brain_prime():
                 d.append(i)
         print('Answer \"yes\" if given number is prime.Otherwise answer \"no\".')
         an = prompt.string('Your answer: ').lower()
-        if (an == 'yes' and len(d) == 2) or (an == 'no' and len(d) > 2):
+        if an == 'yes' and len(d) == 2:
             count += 1
             print('Correct!')
-        else:
+
+        elif an == 'no' and len(d) > 2:
+            count += 1
+            print('Correct!')
+            
+        elif an == 'yes' and len(d) > 2:
             correction_of_user_answer = False
             count += 3
             print(f'\'{an}\' is wrong answer;(.Correct answer was \'no\'.')
             print(f'Let\'s try again, {name}!')
+            
+        elif an == 'no' and len(d) == 2:
+            correction_of_user_answer = False
+            count += 3
+            print(f'\'{an}\' is wrong answer;(.Correct answer was \'yes\'.')
+            print(f'Let\'s try again, {name}!')    
+        
     if correction_of_user_answer is True:
         print(f'Congratulations, {name}!')
