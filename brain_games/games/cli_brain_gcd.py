@@ -17,18 +17,18 @@ def brain_gcd():
         for i in range(1, min_number+1):
             if a % i == 0 and b % i == 0:
                 list_of_dividers.append(i)
-                max_divider = max(list_of_dividers)
+                d = max(list_of_dividers)
         print('Find the greatest common divisor of given numbers.')
         correction_of_user_answer = True
         print(f'Question: {a} {b}')
-        user_answer = prompt.string('Your answer: ')
-        if int(user_answer) == max_divider:
+        n = prompt.string('Your answer: ')
+        if int(n) == d:
             count += 1
             print('Correct!')
         else:
             count = 3
             correction_of_user_answer = False
-            print(f'\'{user_answer}\' is wrong answer;(. Correct answer was \'{max_divider}\'.')
+            print(f'\'{n}\' is wrong answer;(.Correct answer was \'{d}\'.')
             print(f'Let\'s try again, {name}!')
     if correction_of_user_answer is True:
         print(f'Congratulations, {name}!')

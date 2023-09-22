@@ -17,20 +17,20 @@ def brain_progression():
         progression = []
         for i in range(delta_of_progression, x, delta_of_progression):
             progression.append(i)
-        unknown_element = progression[position_of_unknown_element]
+        ue = progression[position_of_unknown_element]
         progression[position_of_unknown_element] = '..'
         print('What number is missing in the progression?')
         correction_of_user_answer = True
-        print('Question: ', end = '')
+        print('Question: ', end='')
         print(*progression)
-        user_answer = prompt.string('Your answer: ')
-        if int(user_answer) == unknown_element:
+        an = prompt.string('Your answer:')
+        if int(an) == ue:
             count += 1
             print('Correct!')
         else:
             count = 3
             correction_of_user_answer = False
-            print(f'\'{user_answer}\' is wrong answer;(. Correct answer was \'{unknown_element}\'.')
+            print(f'\'{an}\' is wrong answer;(. Correct answer was \'{ue}\'.')
             print(f'Let\'s try again, {name}!')
     if correction_of_user_answer is True:
         print(f'Congratulations, {name}!')

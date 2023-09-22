@@ -12,19 +12,19 @@ def brain_prime():
     while count < NUMBER_OF_REPETITIONS:
         number = randint(1, 100)
         print(f'Question: {number}')
-        list_of_dividers = []
+        d = []
         for i in range(1, number+1):
             if number % i == 0:
-                list_of_dividers.append(i)
+                d.append(i)
         print('Answer \"yes\" if given number is prime. Otherwise answer \"no\".')
-        user_answer = prompt.string('Your answer: ').lower()
-        if (user_answer == 'yes' and len(list_of_dividers) == 2) or (user_answer == 'no' and len(list_of_dividers) > 2):
+        an = prompt.string('Your answer: ').lower()
+        if (an == 'yes' and len(d) == 2) or (an == 'no' and len(d) > 2):
             count += 1
             print('Correct!')
         else:
             correction_of_user_answer = False
             count += 3
-            print(f'\'{user_answer}\' is wrong answer;(.')
+            print(f'\'{an}\' is wrong answer;(.')
             print(f'Let\'s try again, {name}!')
     if correction_of_user_answer is True:
         print(f'Congratulations, {name}!')
