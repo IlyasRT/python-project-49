@@ -19,14 +19,23 @@ def brain_prime():
             if number % i == 0:
                 d.append(i)
         an = prompt.string('Your answer: ')
-        if (an == 'yes' and len(d) == 2) or (an == 'no' and len(d) > 2):
-            count += 1
-            print('Correct!')
-        elif an == 'yes' and len(d) > 2:
-            correction = False
-            print(f'{A_YES}\n{A_CM}{name}!')
+        if len(d) == 2:
+            var = 2
         else:
-            correction = False
-            print(f'{A_NO}\n{A_CM}{name}!')
+            var = 3
+        ans = (an, var)
+        match ans:
+            case 'yes', 2:
+                count += 1
+                print('Correct!')
+            case 'no', 3:
+                count += 1
+                print('Correct!')
+            case 'no', 2:
+                correction = False
+                print(f'{A_NO}\n{A_CM}{name}!')
+            case 'yes', 3:
+                correction = False
+                print(f'{A_YES}\n{A_CM}{name}!')
     if correction is True:
         print(f'Congratulations, {name}!')
