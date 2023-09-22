@@ -24,11 +24,9 @@ def brain_prime():
             print('Correct!')
         elif an == 'yes' and len(d) > 2:
             correction = False
-            #count += 3
             print(f'{A_YES}\n{A_CM}{name}!')
         else:
             correction = False
-            #count += 3
             print(f'{A_NO}\n{A_CM}{name}!')
     if correction is True:
         print(f'Congratulations, {name}!')
