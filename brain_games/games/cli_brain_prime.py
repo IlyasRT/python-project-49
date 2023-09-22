@@ -11,7 +11,7 @@ def brain_prime():
     count = 0
     correction = True
     print('Answer \"yes\" if given number is prime. Otherwise answer \"no\".')
-    while count < NUMBER_OF_REPETITIONS or correction is False:
+    while count < NUMBER_OF_REPETITIONS and correction is True:
         number = randint(1, 30)
         print(f'Question: {number}')
         d = []
@@ -24,11 +24,11 @@ def brain_prime():
             print('Correct!')
         elif an == 'yes' and len(d) > 2:
             correction = False
-            # count += 3
+            #count += 3
             print(f'{A_YES}\n{A_CM}{name}!')
         else:
             correction = False
-            # count += 3
+            #count += 3
             print(f'{A_NO}\n{A_CM}{name}!')
     if correction is True:
         print(f'Congratulations, {name}!')
