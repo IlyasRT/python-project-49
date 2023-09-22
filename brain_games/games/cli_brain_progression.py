@@ -5,7 +5,7 @@ from brain_games.games.constants import NUMBER_OF_REPETITIONS
 print('brain-prog')
 
 
-def brain_prog():
+def rain_progression():
     name = welcome_user()
     correction_of_user_answer = True
     count = 0
