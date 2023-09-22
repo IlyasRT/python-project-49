@@ -13,7 +13,7 @@ def brain_prime():
         number = randint(1, 100)
         print(f'Question: {number}')
         d = []
-        for i in range(1, number+1):
+        for i in range(1, number + 1):
             if number % i == 0:
                 d.append(i)
         print('Answer \"yes\" if given number is prime. Otherwise answer \"no\".')
