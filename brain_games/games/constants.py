@@ -1,3 +1,4 @@
 NUMBER_OF_REPETITIONS = 3
-ANSWER_FOR_USER_1 = ' is wrong answer;(. Correct answer was '
-ANSWER_FOR_USER_2 = 'Let\'s try again, '
+A_YES = '\'yes\' is wrong answer;(. Correct answer was \'no\'.'
+A_CM = 'Let\'s try again, '
+A_NO = '\'no\' is wrong answer;(. Correct answer was \'yes\'.'
