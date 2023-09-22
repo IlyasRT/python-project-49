@@ -11,9 +11,9 @@ def brain_progression():
     count = 0
     while count < NUMBER_OF_REPETITIONS:
         length_of_progression = randint(5, 10)
-        position_of_unknown_element = randint(0, length_of_progression-1)
+        position_of_unknown_element = randint(0, length_of_progression - 1)
         delta_of_progression = randint(1, 10)
-        x = length_of_progression*delta_of_progression+1
+        x = length_of_progression * delta_of_progression+1
         progression = []
         for i in range(delta_of_progression, x, delta_of_progression):
             progression.append(i)
