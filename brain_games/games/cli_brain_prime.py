@@ -24,7 +24,7 @@ def brain_prime():
         else:
             correction_of_user_answer = False
             count += 3
-            print(f'\'{an}\' is wrong answer;(.')
+            print(f'\'{an}\' is wrong answer;(.Correct answer was \'no\'.')
             print(f'Let\'s try again, {name}!')
     if correction_of_user_answer is True:
         print(f'Congratulations, {name}!')
