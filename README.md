@@ -22,8 +22,8 @@ brain-gcd
 brain-prog
 brain-prime
 
-[![asciicast]```brain-even``` (https://asciinema.org/a/kOdfzSjdM9eK7DXJBeVa4mKaf)
-[![asciicast]```brain-calc``` (https://asciinema.org/a/kU9oLZYSCLxoEc1rI0IYWIo8l)
-[![asciicast]```brain-gcd```  (https://asciinema.org/a/eZ7WgC3amGYOszELqznq6ZIWz)
-[![asciicast]```brain-prog``` (https://asciinema.org/a/K9z2m1ywwV3yeeR96gp0rVXXv)
-[![asciicast]```brain-prime```(https://asciinema.org/a/hLyeL5NUbBRa7UdyheWEkw6Xi)
+[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/kOdfzSjdM9eK7DXJBeVa4mKaf)
+[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/kU9oLZYSCLxoEc1rI0IYWIo8l)
+[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/eZ7WgC3amGYOszELqznq6ZIWz)
+[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/K9z2m1ywwV3yeeR96gp0rVXXv)
+[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/hLyeL5NUbBRa7UdyheWEkw6Xi)
