@@ -1,6 +1,6 @@
 from random import randint
 print('brain-progression')
-DESCRIPTION_OF_GAME = 'Answer \"yes\" if given number is prime. Otherwise answer \"no\".'
+DESCR = 'Answer \"yes\" if given number is prime. Otherwise answer \"no\".'
 
 
 def initial_data():
@@ -12,8 +12,8 @@ def initial_data():
             d.append(i)
 
     if len(d) == 2:
-        correct_answer = 'yes'
-        return correct_answer
+        answ = 'yes'
+        return answ
     else:
-        correct_answer = 'no'
-        return correct_answer
+        answ = 'no'
+        return answ

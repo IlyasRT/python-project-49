@@ -1,6 +1,6 @@
 from random import randint
 print('brain-progression')
-DESCRIPTION_OF_GAME = 'What number is missing in the progression?'
+DESCR = 'What number is missing in the progression?'
 
 
 def initial_data():
@@ -15,5 +15,5 @@ def initial_data():
     progression[position_of_unknown_element] = '..'
     print('Question: ', end='')
     print(*progression)
-    correct_answer = str(ue)
-    return correct_answer
+    answ = str(ue)
+    return answ

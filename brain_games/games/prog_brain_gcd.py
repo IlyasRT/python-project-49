@@ -1,6 +1,6 @@
 from random import randint
 print('brain-gcd')
-DESCRIPTION_OF_GAME = 'Find the greatest common divisor of given numbers.'
+DESCR= 'Find the greatest common divisor of given numbers.'
 
 
 def initial_data():
@@ -13,5 +13,5 @@ def initial_data():
             list_of_dividers.append(i)
             d = max(list_of_dividers)
     print(f'Question: {a} {b}')
-    correct_answer = str(d)
-    return correct_answer
+    answ = str(d)
+    return answ
