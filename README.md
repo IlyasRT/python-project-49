@@ -5,9 +5,25 @@
 
 ### Brain Games:
 Brain Games is a set of five console games built on the principle of popular mobile applications for brain training.
+1. Definition of an even number
+2. Calculator. Arithmetic expressions to be evaluated
+3. Finding the Greatest Common Divisor
+4. Progression. Finding missing numbers in a sequence of numbers
+5. Definition of a Prime Number
 
-```brain-even``` https://asciinema.org/a/kOdfzSjdM9eK7DXJBeVa4mKaf
-```brain-calc``` https://asciinema.org/a/kU9oLZYSCLxoEc1rI0IYWIo8l
-```brain-gcd```  https://asciinema.org/a/eZ7WgC3amGYOszELqznq6ZIWz
-```brain-prog``` https://asciinema.org/a/K9z2m1ywwV3yeeR96gp0rVXXv
-```brain-prime```https://asciinema.org/a/hLyeL5NUbBRa7UdyheWEkw6Xi
+### How to install
+Download the game and install from root directory
+
+### How to run
+To start the game you need to type one of the commands:
+brain-even
+brain-calc
+brain-gcd
+brain-prog
+brain-prime
+
+[![asciicast]```brain-even``` (https://asciinema.org/a/kOdfzSjdM9eK7DXJBeVa4mKaf)
+[![asciicast]```brain-calc``` (https://asciinema.org/a/kU9oLZYSCLxoEc1rI0IYWIo8l)
+[![asciicast]```brain-gcd```  (https://asciinema.org/a/eZ7WgC3amGYOszELqznq6ZIWz)
+[![asciicast]```brain-prog``` (https://asciinema.org/a/K9z2m1ywwV3yeeR96gp0rVXXv)
+[![asciicast]```brain-prime```(https://asciinema.org/a/hLyeL5NUbBRa7UdyheWEkw6Xi)

@@ -4,9 +4,8 @@ version = "0.1.0"
 description = "Hexlet project Brain games"
 authors = ["ilyas-r <riggit5->"]
 repository = "https://github.com/IlyasRT/python-project-49"
-packages = [
-  { include = "brain_games" },
-]
+packages = [{ include = "brain_games" },]
+classifiers = ['python 3.10.12']
 
 
 [tool.poetry.dependencies]
@@ -26,4 +25,5 @@ brain-prime = "brain_games.scripts.brain_prime:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
+
 build-backend = "poetry.core.masonry.api"
