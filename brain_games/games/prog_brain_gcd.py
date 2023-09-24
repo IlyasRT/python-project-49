@@ -1,6 +1,6 @@
 from random import randint
 print('brain-gcd')
-DESCR= 'Find the greatest common divisor of given numbers.'
+DESCR = 'Find the greatest common divisor of given numbers.'
 
 
 def initial_data():
