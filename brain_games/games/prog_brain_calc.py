@@ -1,6 +1,6 @@
 from random import randint
-from brain_games.games.start import start_game
-import prompt
+#from brain_games.games.start import start_game
+#import prompt
 
 print('brain-calc')
 DESCRIPTION_OF_GAME = 'What is the result of the expression?'
