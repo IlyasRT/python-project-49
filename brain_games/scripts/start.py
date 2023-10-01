@@ -1,12 +1,12 @@
 import prompt
-from brain_games.games.constants import NUMBER_OF_REPETITIONS
+NUMBER_OF_REPETITIONS = 3
 
 
 def start_game(x):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    print(x.DESCR_GAME)
+    print(x.DESCR)
     count = 0
     correction_of_user_answer = True
     while count < NUMBER_OF_REPETITIONS:
