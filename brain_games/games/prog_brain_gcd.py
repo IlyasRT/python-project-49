@@ -15,6 +15,6 @@ def initial_data():
                 list_of_dividers.append(i)
         answer = max(list_of_dividers)
         return answer
-    expression = f'{a}, {b}'
+    expression = f'{a} {b}'
     answ = str(check_gcd(a, b))
     return expression, answ
