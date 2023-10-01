@@ -5,8 +5,7 @@ DESCR = 'Answer \"yes\" if given number is prime. Otherwise answer \"no\".'
 
 def initial_data():
     expression = randint(2, 30)
-    
-    
+
     def check_prime(x):
         d = []
         for i in range(1, x + 1):
@@ -18,9 +17,8 @@ def initial_data():
             return answer
         else:
             answer = False
-            
-        return answer    
-    if check_prime(expression) == True:
+        return answer
+    if check_prime(expression) is True:
         answ = 'yes'
     else:
         answ = 'no'

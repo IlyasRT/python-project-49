@@ -11,8 +11,7 @@ def start_game(x):
     correction_of_user_answer = True
     while count < NUMBER_OF_REPETITIONS:
         expression, answ = x.initial_data()
-        print('Question:',expression)
-        
+        print('Question:', expression)
         u_a = prompt.string('Your answer: ')
         if u_a == answ:
             print('Correct!')

@@ -1,12 +1,9 @@
 from random import randint
-
 print('brain-progression')
 DESCR = 'What number is missing in the progression?'
 
 
 def initial_data():
-
-
     def check_progression():
         length_of_progression = randint(5, 10)
         position_of_unknown_element = randint(0, length_of_progression - 1)

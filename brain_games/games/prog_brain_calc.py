@@ -27,4 +27,3 @@ def initial_data():
             answ = str(list_of_calculation[i])
             expression = f'{a} {action} {b}'
             return expression, answ
-
