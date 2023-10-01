@@ -16,10 +16,15 @@ def initial_data():
     list_of_calculation = [summ, delta, multi]
     match action:
         case '+':
-            print(f'Question: {a} {action} {b}')
+            answ = str(list_of_calculation[i])
+            expression = f'{a} {action} {b}'
+            return expression, answ
         case '-':
-            print(f'Question: {a} {action} {b}')
+            answ = str(list_of_calculation[i])
+            expression = f'{a} {action} {b}'
+            return expression, answ
         case '*':
-            print(f'Question: {a} {action} {b}')
-    answ = str(list_of_calculation[i])
-    return answ
+            answ = str(list_of_calculation[i])
+            expression = f'{a} {action} {b}'
+            return expression, answ
+

@@ -1,19 +1,27 @@
 from random import randint
-print('brain-progression')
+print('brain-prime')
 DESCR = 'Answer \"yes\" if given number is prime. Otherwise answer \"no\".'
 
 
 def initial_data():
-    number = randint(2, 30)
-    print(f'Question: {number}')
-    d = []
-    for i in range(1, number + 1):
-        if number % i == 0:
-            d.append(i)
+    expression = randint(2, 30)
+    
+    
+    def check_prime(x):
+        d = []
+        for i in range(1, x + 1):
+            if x % i == 0:
+                d.append(i)
 
-    if len(d) == 2:
+        if len(d) == 2:
+            answer = True
+            return answer
+        else:
+            answer = False
+            
+        return answer    
+    if check_prime(expression) == True:
         answ = 'yes'
-        return answ
     else:
         answ = 'no'
-        return answ
+    return expression, answ
