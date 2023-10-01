@@ -16,14 +16,13 @@ def initial_data():
         progression[position_of_unknown_element] = '..'
         return progression, ue
     progression, ue = check_progression()
-    
-    
+
+
     def build_progression(x):
         prog = ''
         for el in x:
-            prog = prog+' '+str(el)
+            prog = prog + ' ' + str(el)
         return prog[1:]
-        
     expression = build_progression(progression)
     answ = str(ue)
     return expression, answ
