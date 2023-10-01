@@ -16,8 +16,6 @@ def initial_data():
         progression[position_of_unknown_element] = '..'
         return progression, ue
     progression, ue = check_progression()
-
-
     def build_progression(x):
         prog = ''
         for el in x:
