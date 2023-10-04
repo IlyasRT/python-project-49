@@ -4,9 +4,8 @@ DESCR = 'What number is missing in the progression?'
 
 
 def initial_data():
-    #prog, ue = calc_prog()
     first, last, delta, index = calc_prog()
-    progres, unk_el = build_prog (first, last, delta, index)
+    progres, unk_el = build_prog(first, last, delta, index)
     expression = build_question(progres)
     answ = str(unk_el)
     return expression, answ
@@ -21,7 +20,7 @@ def calc_prog():
     return first_prog_el, last_prog_el, delta_prog, index_unk_el
 
 
-def build_prog(first_prog_el,last_prog_el,delta_prog,index_unk):   
+def build_prog(first_prog_el, last_prog_el, delta_prog, index_unk):   
     prog = []
     for i in range(first_prog_el, last_prog_el, delta_prog):
         prog.append(i)
@@ -31,7 +30,6 @@ def build_prog(first_prog_el,last_prog_el,delta_prog,index_unk):
 
 
 def build_question(progres):
-    prog_str = list(map(lambda x: str(x),progres))
+    prog_str = list(map(lambda x: str(x), progres))
     prog_for_print = " ".join(prog_str)
     return prog_for_print
-

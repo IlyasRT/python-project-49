@@ -10,7 +10,7 @@ def initial_data():
     else:
         answ = 'no'
     return expression, answ
-    
+
 
 def check_prime(x):
     d = []
@@ -23,4 +23,3 @@ def check_prime(x):
     else:
         answer = False
         return answer
-
