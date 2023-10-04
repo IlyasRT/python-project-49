@@ -1,6 +1,6 @@
 from random import randint
 print('brain-progression')
-DESCR = 'What number is missing in the progression?'
+DESCR = 'What number is missing in the prog?'
 
 
 def initial_data():
