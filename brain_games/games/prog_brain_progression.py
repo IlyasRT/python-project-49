@@ -20,7 +20,7 @@ def calc_prog():
     return first_prog_el, last_prog_el, delta_prog, index_unk_el
 
 
-def build_prog(first_prog_el, last_prog_el, delta_prog, index_unk):   
+def build_prog(first_prog_el, last_prog_el, delta_prog, index_unk):
     prog = []
     for i in range(first_prog_el, last_prog_el, delta_prog):
         prog.append(i)
