@@ -9,6 +9,7 @@ def initial_data():
     answ = str(check_gcd(a, b))
     return expression, answ
 
+
 def check_gcd(x, y):
     list_of_number = [x, y]
     list_of_dividers = []
@@ -18,4 +19,3 @@ def check_gcd(x, y):
             list_of_dividers.append(i)
     answer = max(list_of_dividers)
     return answer
-

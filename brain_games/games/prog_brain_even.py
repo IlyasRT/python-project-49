@@ -11,10 +11,10 @@ def initial_data():
         answ = 'no'
     return expression, answ
 
+
 def check_even(x):
     if int(x % 2) == 0:
         answer = True
     elif int(x % 2) != 0:
         answer = False
     return answer
-
