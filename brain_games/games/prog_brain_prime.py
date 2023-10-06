@@ -3,7 +3,7 @@ print('brain-prime')
 DESCR = 'Answer \"yes\" if given number is prime. Otherwise answer \"no\".'
 
 
-def initial_data():
+def get_example_and_answer():
     expression = randint(2, 30)
     if check_prime(expression) is True:
         answ = 'yes'

@@ -1,16 +1,16 @@
 import prompt
-NUMBER_OF_REPETITIONS = 3
+NUMBER_OF_ROUNDS = 3
 
 
-def start_game(x):
+def start_game(name_of_game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    print(x.DESCR)
+    print(name_of_game.DESCR)
     count = 0
     correction_of_user_answer = True
-    while count < NUMBER_OF_REPETITIONS:
-        expression, answ = x.initial_data()
+    while count < NUMBER_OF_ROUNDS:
+        expression, answ = name_of_game.get_example_and_answer()
         print('Question:', expression)
         u_a = prompt.string('Your answer: ')
         if u_a == answ:

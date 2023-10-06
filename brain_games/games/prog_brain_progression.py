@@ -3,33 +3,33 @@ print('brain-progression')
 DESCR = 'What number is missing in the progression?'
 
 
-def initial_data():
-    first, last, delta, index = calc_prog()
-    progres, unk_el = build_prog(first, last, delta, index)
-    expression = build_question(progres)
-    answ = str(unk_el)
+def get_example_and_answer():
+    initial_term, last, difference, index = calc_prog()
+    progres = build_prog(initial_term, last, difference, index)
+    expression, unknown_element = build_question(progres, index)
+    answ = str(unknown_element)
     return expression, answ
 
 
 def calc_prog():
     len_prog = randint(5, 10)
-    index_unk_el = randint(0, len_prog - 1)
-    delta_prog = randint(1, 5)
-    first_prog_el = delta_prog
-    last_prog_el = (len_prog * delta_prog) + 1
-    return first_prog_el, last_prog_el, delta_prog, index_unk_el
+    index_unknown_element = randint(0, len_prog - 1)
+    difference_2 = randint(1, 5)
+    initial_term_2 = difference_2
+    last_elem = (len_prog * difference_2) + 1
+    return initial_term_2, last_elem, difference_2, index_unknown_element
 
 
-def build_prog(first_prog_el, last_prog_el, delta_prog, index_unk):
-    prog = []
-    for i in range(first_prog_el, last_prog_el, delta_prog):
-        prog.append(i)
-    ue = prog[index_unk]
-    prog[index_unk] = '..'
-    return prog, ue
+def build_prog(initial_term_2, last_elem, difference_2, index_unknown_element):
+    progression = []
+    for i in range(initial_term_2, last_elem, difference_2):
+        progression.append(i)
+    return progression
 
 
-def build_question(progres):
+def build_question(progres, index_unknown_element):
+    unknown_element = progres[index_unknown_element]
+    progres[index_unknown_element] = '..'
     prog_str = list(map(lambda x: str(x), progres))
     prog_for_print = " ".join(prog_str)
-    return prog_for_print
+    return prog_for_print, unknown_element

@@ -3,7 +3,7 @@ print('brain-even')
 DESCR = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def initial_data():
+def get_example_and_answer():
     expression = randint(1, 10)
     if check_even(expression) is True:
         answ = 'yes'
