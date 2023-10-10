@@ -21,7 +21,7 @@ def calc_prog():
 
 def build_prog(initial_term, last_elem, difference, index_unknown_element):
     progression = []
-    for i in range(initial_term, last_elem+1, difference):
+    for i in range(initial_term, last_elem + 1, difference):
         progression.append(i)
     return progression
 
