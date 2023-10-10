@@ -1,28 +1,28 @@
 from random import randint
-print('brain-progression')
 DESCR = 'What number is missing in the progression?'
 
 
 def get_example_and_answer():
-    initial_term, last, difference, index = calc_prog()
-    progres = build_prog(initial_term, last, difference, index)
-    expression, unknown_element = build_question(progres, index)
+    initial_term, last_elem, difference, index = calc_prog()
+    progres = build_prog(initial_term, last_elem, difference, index)
+    question, unknown_element = build_question(progres, index)
     answ = str(unknown_element)
-    return expression, answ
+    return question, answ
 
 
 def calc_prog():
     len_prog = randint(5, 10)
     index_unknown_element = randint(0, len_prog - 1)
-    difference_2 = randint(1, 5)
-    initial_term_2 = difference_2
-    last_elem = (len_prog * difference_2) + 1
-    return initial_term_2, last_elem, difference_2, index_unknown_element
+    difference = randint(1, 5)
+    initial_term = difference
+    #last_elem = (len_prog * difference) + 1
+    last_elem = initial_term + (len_prog - 1) * difference
+    return initial_term, last_elem, difference, index_unknown_element
 
 
-def build_prog(initial_term_2, last_elem, difference_2, index_unknown_element):
+def build_prog(initial_term, last_elem, difference, index_unknown_element):
     progression = []
-    for i in range(initial_term_2, last_elem, difference_2):
+    for i in range(initial_term, last_elem, difference):
         progression.append(i)
     return progression
 

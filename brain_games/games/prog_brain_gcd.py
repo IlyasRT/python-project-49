@@ -1,13 +1,12 @@
 from random import randint
-print('brain-gcd')
 DESCR = 'Find the greatest common divisor of given numbers.'
 
 
 def get_example_and_answer():
     a, b = randint(1, 10), randint(1, 10)
-    expression = f'{a} {b}'
+    question = f'{a} {b}'
     answ = str(check_gcd(a, b))
-    return expression, answ
+    return question, answ
 
 
 def check_gcd(x, y):

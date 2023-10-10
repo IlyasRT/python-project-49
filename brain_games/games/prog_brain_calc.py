@@ -1,5 +1,4 @@
 from random import randint
-
 DESCR = 'What is the result of the expression?'
 
 
