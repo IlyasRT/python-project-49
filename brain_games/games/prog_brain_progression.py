@@ -11,7 +11,7 @@ def get_example_and_answer():
 
 
 def calc_prog():
-    len_prog = randint(5, 10)
+    len_prog = randint(6, 10)
     index_unknown_element = randint(0, len_prog - 1)
     difference = randint(1, 5)
     initial_term = difference
