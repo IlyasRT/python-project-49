@@ -10,8 +10,8 @@ def game_engine_function(name_of_game):
     count = 0
     correction_of_user_answer = True
     while count < NUMBER_OF_ROUNDS:
-        expression, answ = name_of_game.get_example_and_answer()
-        print('Question:', expression)
+        question, answ = name_of_game.get_example_and_answer()
+        print('Question:', question)
         u_a = prompt.string('Your answer: ')
         if u_a == answ:
             print('Correct!')
