@@ -15,13 +15,16 @@ def get_example_and_answer():
     match action:
         case '+':
             answ = str(list_of_calculation[random_action])
-            question = f'{first_number_of_example} {action} {second_number_of_example}'
+            question = (f'{first_number_of_example} {action}'
+                        f' {second_number_of_example}')
             return question, answ
         case '-':
             answ = str(list_of_calculation[random_action])
-            question = f'{first_number_of_example} {action} {second_number_of_example}'
+            question = (f'{first_number_of_example} {action}'
+                        f' {second_number_of_example}')
             return question, answ
         case '*':
             answ = str(list_of_calculation[random_action])
-            question = f'{first_number_of_example} {action} {second_number_of_example}'
+            question = (f'{first_number_of_example} {action}'
+                        f' {second_number_of_example}')
             return question, answ

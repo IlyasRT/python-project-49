@@ -18,7 +18,8 @@ def create_game_process(game):
             count += 1
         else:
             correction_of_user_answer = False
-            print(f'\'{user_answer}\' is wrong answer;(.Correct answer was \'{answ}\'.')
+            print(f'\'{user_answer}\' is wrong answer;(.'
+                  f'Correct answer was \'{answ}\'.')
             print(f'Let\'s try again, {name}!')
             count = 3
     if correction_of_user_answer is True:

@@ -15,7 +15,6 @@ def calc_prog():
     index_unknown_element = randint(0, len_prog - 1)
     difference = randint(1, 5)
     initial_term = difference
-    #last_elem = (len_prog * difference) + 1
     last_elem = initial_term + (len_prog - 1) * difference
     return initial_term, last_elem, difference, index_unknown_element
 
