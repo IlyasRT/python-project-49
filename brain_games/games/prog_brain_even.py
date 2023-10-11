@@ -3,8 +3,8 @@ DESCR = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def get_example_and_answer():
-    NUMBER_OF_EXAMPLE = randint(1, 10)
-    question = NUMBER_OF_EXAMPLE
+    NUMBER_EXAMPLE = randint(1, 10)
+    question = NUMBER_EXAMPLE
     if is_even(question) is True:
         answ = 'yes'
     else:

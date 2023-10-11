@@ -2,10 +2,9 @@ from random import randint
 DESCR = 'Answer \"yes\" if given number is prime. Otherwise answer \"no\".'
 
 
-
 def get_example_and_answer():
-    NUMBER_OF_EXAMPLE = randint(2, 30)
-    question = NUMBER_OF_EXAMPLE
+    NUMBER_EXAMPLE = randint(2, 30)
+    question = NUMBER_EXAMPLE
     if is_prime(question) is True:
         answ = 'yes'
     else:
