@@ -2,10 +2,12 @@ from random import randint
 DESCR = 'Find the greatest common divisor of given numbers.'
 
 
+
 def get_example_and_answer():
-    a, b = randint(1, 10), randint(1, 10)
-    question = f'{a} {b}'
-    answ = str(check_gcd(a, b))
+    FIRST_NUMBER_OF_EXAMPLE = randint(1, 10)
+    SECOND_NUMBER_OF_EXAMPLE = randint(1, 10)
+    question = f'{FIRST_NUMBER_OF_EXAMPLE} {SECOND_NUMBER_OF_EXAMPLE}'
+    answ = str(check_gcd(FIRST_NUMBER_OF_EXAMPLE, SECOND_NUMBER_OF_EXAMPLE))
     return question, answ
 
 
