@@ -1,5 +1,10 @@
 from random import randint
 DESCR = 'What number is missing in the progression?'
+LOWER_BOUND_OF_PROGRESSION = 6
+UPPER_BOUND_OF_PROGRESSION = 10
+LOWER_BOUND_UNKNOWN_ELEMENT = 0
+LOWER_BOUND_DIFFERENCE = 1
+UPPER_BOUND_DIFFERENCE = 5
 
 
 def get_example_and_answer():
@@ -11,9 +16,9 @@ def get_example_and_answer():
 
 
 def calc_prog():
-    len_prog = randint(6, 10)
-    index_unknown_element = randint(0, len_prog - 1)
-    difference = randint(1, 5)
+    len_prog = randint(LOWER_BOUND_OF_PROGRESSION, UPPER_BOUND_OF_PROGRESSION)
+    index_unknown_element = randint(LOWER_BOUND_UNKNOWN_ELEMENT, len_prog - 1)
+    difference = randint(LOWER_BOUND_DIFFERENCE, UPPER_BOUND_DIFFERENCE)
     initial_term = difference
     last_elem = initial_term + (len_prog - 1) * difference
     return initial_term, last_elem, difference, index_unknown_element
